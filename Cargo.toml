@@ -2,7 +2,7 @@
 name = "dimmac"
 version = "0.1.0"
 edition = "2021"
-description = ""
+description = "Macros to generate usize values for indexing data structures"
 license = "MIT OR Apache-2.0"
 authors = [
     "Taennan taennan@zohomail.com"
@@ -11,4 +11,4 @@ repository = ""
 exclude = [".idea", ".git", ".gitignore", "CHANGELOG.md"]
 
 keywords = ["multidimensional", "macros"]
-categories = []
+categories = ["no_std", "rust_patterns"]
