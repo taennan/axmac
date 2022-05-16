@@ -1,5 +1,5 @@
 
-use dimmac::ax;
+use axmac::ax;
 
 #[test]
 fn can_work() {
