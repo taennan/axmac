@@ -1,7 +1,7 @@
 
-use dimmac::dim;
+use dimmac::ax;
 
 #[test]
 fn can_work() {
-    assert_eq!(dim!(x), 0usize);
+    assert_eq!(ax!(x), 0usize);
 }
