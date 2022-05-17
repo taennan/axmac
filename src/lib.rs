@@ -2,7 +2,6 @@
 //! A collection of macros to generate usize values for indexing data structures
 //!
 
-
 #![no_std]
 
 
@@ -29,10 +28,10 @@
 /// assert_eq!(fourth, 3);
 ///
 /// // ERROR: Only allowed to use one of x, y, z or w
-/// // let fifth_axension = ax!(v);
+/// // let fifth_dimension = ax!(v);
 ///
 /// // ERROR: Only accepts one identifier
-/// //        If multiple axensions are what you need, see the 'axs' macro
+/// //        If multiple axes are what you need, see the 'axs' macro
 /// // let third_and_fourth = ax!(z, w);
 /// # }
 /// ```
@@ -112,10 +111,10 @@ macro_rules! axs {
 /// //  w = 3
 ///
 /// // Range with identifiers
-/// assert_eq!(axr!(x..z), 0..2usize);
+/// assert_eq!(axr!(x..z), 0..2);
 ///
 /// // RangeInclusive with identifiers
-/// assert_eq!(axr!(y..=w), 1..=3usize);
+/// assert_eq!(axr!(y..=w), 1..=3);
 ///
 /// // RangeTo with identifiers
 /// assert_eq!(axr!(..z), ..2);
@@ -127,18 +126,18 @@ macro_rules! axs {
 /// assert_eq!(axr!(y..), 1..);
 ///
 /// // Range with identifier and expression
-/// assert_eq!(axr!(x..10), 0..10usize);
+/// assert_eq!(axr!(x..10), 0..10);
 ///
 /// // RangeInclusive with identifier and expression
-/// assert_eq!(axr!(x..=7), 0..=7usize);
+/// assert_eq!(axr!(x..=7), 0..=7);
 ///
 /// // Range with expression and identifier
 /// //  The parentheses around the expression are compulsory
-/// assert_eq!(axr!((0)..z), 0..2usize);
+/// assert_eq!(axr!((0)..z), 0..2);
 ///
 /// // RangeInclusive with expression and identifier
 /// //  The parentheses around the expression are compulsory
-/// assert_eq!(axr!((1)..=w), 1..=3usize);
+/// assert_eq!(axr!((1)..=w), 1..=3);
 /// # }
 /// ```
 ///
