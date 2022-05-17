@@ -1,5 +1,5 @@
 //!
-//! A collection of macros to generate usize values for indexing data structures
+//! Readable indexing macros for 1-4 dimensional data structures
 //!
 
 #![no_std]

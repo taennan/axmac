@@ -2,7 +2,7 @@
 name = "axmac"
 version = "0.1.0"
 edition = "2021"
-description = "Macros to generate usize values for indexing data structures"
+description = "Readable indexing macros for 1-4 dimensional data structures"
 license = "MIT OR Apache-2.0"
 authors = [
     "Taennan taennan@zohomail.com"

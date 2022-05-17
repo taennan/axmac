@@ -1,7 +1,7 @@
 
 # Axmac
 
-Readable indexing for 1-4 dimensional data structures.
+Readable indexing macros for 1-4 dimensional data structures.
 
 ### The Problem
 
