@@ -28,7 +28,7 @@
 /// assert_eq!(fourth, 3);
 ///
 /// // ERROR: Only allowed to use one of x, y, z or w
-/// // let fifth_dimension = ax!(v);
+/// // let fifth_axis = ax!(v);
 ///
 /// // ERROR: Only accepts one identifier
 /// //        If multiple axes are what you need, see the 'axs' macro
@@ -64,8 +64,8 @@ macro_rules! ax {
 /// assert_eq!(arr, [0, 1, 2, 3]);
 ///
 /// // Repeat specified item N times
-/// let arr =  axs![w; 5];
-/// assert_eq!(arr, [3, 3, 3, 3, 3]);
+/// let arr =  axs![w; 4];
+/// assert_eq!(arr, [3, 3, 3, 3]);
 /// # }
 /// ```
 ///
@@ -75,8 +75,8 @@ macro_rules! ax {
 /// ```
 /// # #[macro_use] extern crate axmac; fn main() {
 /// # use axmac::axs;
-/// let index_arr =  axs![x,x, z,z, y,y];
-/// assert_eq!(index_arr, [0,0, 2,2, 1,1]);
+/// let arr  =  axs![x,x, z,z, y,y];
+/// assert_eq!(arr, [0,0, 2,2, 1,1]);
 /// # }
 /// ```
 ///
@@ -105,10 +105,10 @@ macro_rules! axs {
 /// # #[macro_use] extern crate axmac; fn main() {
 /// # use axmac::axr;
 /// // PLEASE NOTE!
-/// //  x = 0usize
-/// //  y = 1
-/// //  z = 2
-/// //  w = 3
+/// //  x => 0usize
+/// //  y => 1
+/// //  z => 2
+/// //  w => 3
 ///
 /// // Range with identifiers
 /// assert_eq!(axr!(x..z), 0..2);
